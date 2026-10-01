@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import { site } from "@/content/site";
@@ -75,7 +76,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "750c0a450af84d2f916351cd96d98397"}'></script><!-- End Cloudflare Web Analytics -->
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          strategy="afterInteractive"
+          data-cf-beacon='{"token": "750c0a450af84d2f916351cd96d98397"}'
+        />
         <SkipLink />
         <SiteHeader />
         <main id="main" tabIndex={-1} className="flex-1 outline-none">
