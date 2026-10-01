@@ -7,7 +7,7 @@ export const site = {
   name: "TwelveTwo Technology",
   shortName: "TwelveTwo",
   url: siteUrl,
-  email: "travis@twelvetwo.com",
+  email: "travisjohnprol@gmail.com",
   availableForProjects: true,
   positioning: "Software engineering for businesses that need to build.",
   secondary:
