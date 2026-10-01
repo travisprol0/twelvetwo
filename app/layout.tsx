@@ -75,6 +75,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "750c0a450af84d2f916351cd96d98397"}'></script><!-- End Cloudflare Web Analytics -->
         <SkipLink />
         <SiteHeader />
         <main id="main" tabIndex={-1} className="flex-1 outline-none">
