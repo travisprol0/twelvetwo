@@ -7,7 +7,7 @@ import { ProjectCard } from "@/components/work/ProjectCard";
 export const metadata = pageMetadata({
   title: "Work",
   description:
-    "Software built by TwelveTwo Technology, including Lattice Log greenhouse inventory software and a teacher portfolio site.",
+    "Work built by TwelveTwo Technology, including Lattice Log greenhouse inventory software and a teacher portfolio site.",
   path: "/work",
 });
 
@@ -16,8 +16,8 @@ export default function WorkPage() {
 
   return (
     <>
-      <PageIntro eyebrow="Work" title="Software we've built.">
-        <p>Real systems, real workflows, real software.</p>
+      <PageIntro eyebrow="Work" title="Work we've built.">
+        <p>Real systems, real workflows, real results.</p>
       </PageIntro>
       <Container className="py-16 md:py-24">
         <ProjectCard project={featured} />
